@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>minor project</title>
+    <link rel="shortcut icon" href="/assets/bottom-bar-left0.png" type="image/x-icon">
+    <link rel="stylesheet" media="screen" type="text/css" href="/css/index.css" />
+    <script type="text/javascript" src="/js/index.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="main">
+            <h1><a type="link" href="">RADIOMICS <br> CLASSIFICATION</a></h1>
+            <ul>
+                <button type="button" class="btn btn-md btn-sm" id="Btn" data-toggle="modal"
+                        href="#Modal">INTRODUCTION</button>
+                <button type="button" class="btn btn-md btn-sm" id="Btn1" data-toggle="modal"
+                        href="#Modal1">TESTING & RESULTS</button>
+                <button type="button" class="btn btn-md btn-sm" id="Btn2" data-toggle="modal" 
+                        href="#Modal2">ABOUT US</button>
+            </ul>
+
+
+            <!-- Modal intro -->
+            <div class="modal fade" id="Modal" role="dialog">
+                <div class="modal-dialog modal-lg">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <div class="tab">
+                                <ul class="nav nav-tabs" id="tabContent">
+                                    <li class="active"><a href="#intro" data-toggle="tab">Introduction</a></li>
+                                    <li><a href="#problem" data-toggle="tab">Problem</a></li>
+                                    <li><a href="#proposed-work" data-toggle="tab">Proposed Work</a></li>
+                                    <li><a href="#visualization" data-toggle="tab">Visualization</a></li>
+                                    <li><a href="#overview" data-toggle="tab">Overview</a></li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane active" id="intro">
+                                        <div class="modal-body">
+                                            
+                                            <p> A malignant tumor in the brain is a life-threatening condition. Known as glioblastoma, it's both the most common
+                                                form of
+                                                brain cancer in adults and the one with the worst prognosis, with median survival being less than a year. The
+                                                presence
+                                                of a specific genetic sequence in the tumor known as MGMT promoter methylation has been shown to be a favorable
+                                                prognostic factor and a strong predictor of responsiveness to chemotherapy.
+                                                <br>
+                                                <img src="/assets/bottom_bar_left.png" alt="scan-sample" style="float: right; width: 300px; -webkit-transform: scaleX(-1); transform: scaleX(-1);">
+                                                <br><br>Currently, genetic analysis of cancer requires surgery to extract a tissue sample. Then it can take
+                                                several weeks to
+                                                determine the genetic characterization of the tumor. Depending upon the results and type of initial therapy
+                                                chosen, a
+                                                subsequent surgery may be necessary. If an accurate method to predict the genetics of the cancer through imaging
+                                                (i.e.,
+                                                radiogenomics) alone could be developed, this would potentially minimize the number of surgeries and refine the
+                                                type of
+                                                therapy required.
+                                                <br><br>This project will have the ability predict the genetic subtype of glioblastoma using MRI (magnetic
+                                                resonance imaging)
+                                                scans to train and test the model to detect for the presence of MGMT promoter methylation, thus improving
+                                                diagnosis and treatment planning for patients with glioblastoma.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="problem">
+                                        <div class="modal-body">
+                                            <p> Currently, genetic analysis of cancer requires surgery to extract a tissue sample. Then it can take several weeks to
+                                            determine the genetic characterization of the tumor. Depending upon the results and type of initial therapy chosen, a
+                                            subsequent surgery may be necessary. If an accurate method to predict the genetics of the cancer through imaging (i.e.,
+                                            radiogenomics) alone could be developed, this would potentially minimize the number of surgeries and refine the type of
+                                            therapy required.
+                                            <img src="/assets/Picture3.png" alt="sample-scan" style="width: 250px; float: right;">
+                                            <br><br>This project will have the ability predict the genetic subtype of glioblastoma using MRI (magnetic resonance imaging)
+                                            scans to train and test the model to detect for the presence of MGMT promoter methylation, thus improving diagnosis and
+                                            treatment planning for patients with glioblastoma.
+                                            <br><br>NOTE:<br>
+                                            Not all patients whose tumors have MGMT promoter methylation will respond to alkylating chemotherapy.
+                                            MGMT promoter methylation status should not be used as the sole determinant of alkylating therapy eligibility.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="proposed-work">
+                                        <div class="modal-body">
+                                            
+                                            <p> Initially an analytical model will be created and trained with the pre-determined datasets obtained from Open Datasets.
+                                            Each independent dataset case has a dedicated folder identified by a five-digit number. Within each of these “case”
+                                            folders, there are four sub-folders, each of them corresponding to each of the structural multi-parametric MRI (mpMRI)
+                                            scans, in DICOM format.
+                                            <br> <br>
+                                            <img src="/assets/Picture1.jpg" alt="mri-scan-types-sample" style="width: 820px; border-radius: 7px;">
+                                            <br><br>The exact mpMRI scans included are:
+                                            <br>Fluid Attenuated Inversion Recovery (FLAIR)
+                                            <br>pre-contrast (T1w)
+                                            <br>T1-weighted post-contrast (T1wCE)
+                                            <br>T2-weighted (T2w)
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="visualization">
+                                        <div class="modal-body">
+                                            
+                                            <p>
+                                            When a sheet of glass will divides the body into anterior and posterior sections is the coronal plane. The sagittal
+                                            plane divides the body into right and left sections. <br><br>
+                                            <img src="/assets/Picture4.png" alt="planar-axes" style="float: right; margin-bottom: 25px; width: 400px; border-radius: 7px;"> <br>
+                                            The sagittal plane that is located directly in the center, making left and right sections of equal size, is
+                                            appropriately referred to as the median, or midsagittal plane. A parasagittal plane is located to either the left or the right of the midline. <br><br>
+                                            Axial planes are cross sectional planes that divides the body into upper and lower sections. <br><br>
+                                            The term anterior and ventral refers to movement forward or towards the face. Posterior and dorsal are equivalent terms
+                                            used to describe movement toward the back surface of the body. <br><br>
+                                            Inferior refers to movement toward the feet or down and is synonymous with caudal or toward the tail or, in humans, the
+                                            feet. Superior defines movement toward the head and is used interchangeably with the term cranial or cephalic. Lateral
+                                            refers to movement toward the side of the body. Inversely, medial refers to movement toward the midline of the body.
+                                            <br><br>
+                                            <img src="/assets/Picture5.png" alt="mri-scan-planes" style="display:block; border-radius: 10px;"> <br>
+                                            
+                                            The term distal and proximal are most often used referring to extremities or limbs. Distal or away form, refers to
+                                            movement toward the ends. The distal end of the forearm is the end to which the hand is attached. Proximal or close to,
+                                            which is the opposite of distal, may be defines as situated near the point of attachment. For example, the proximal end
+                                            of the arm is the end at which is attaches to the shoulder. <br><br>
+                                            To help visualize the imaginary body planes, it is helpful to think of large sheets of glass cutting through the body in
+                                            various ways. All sheets of glass that are parallel to the floor are called horizontal, or transverse planes. Those that
+                                            stands perpendicular to the floor are called vertical, or longitudinal planes. <br><br>
+                                            Imaging Planes
+                                            Oblique planes are planes that are slanted and lie at an angle to one of the 3 standard planes. <br>
+                                        </p>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane" id="overview">
+                                        <div class="modal-body">                                            
+                                            <p> The ML model has been predict the presence of MGMT promoter methylation in a progressive accuracy, with the help of
+                                            provided training sets.
+                                            <br>
+                                            Note:
+                                            <br>These results are from early training phase, prediction accuracy is bound to improve as the model gets trained
+                                            with more and reliable datasets.
+                                            <br>
+                                            Some of the results from that progress as follows:
+                                            <br><br>
+                                            <img src="/assets/Picture6.png" alt="mgmt-0-sample" style="width: 820px">
+                                            <br><br>
+                                            <img src="/assets/Picture7.png" alt="mgmt-1-sample" style="width: 820px">
+                                        </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                    </div>
+
+                </div>
+            </div>
+            </div>
+
+            <!-- Modal testing -->
+            <div class="modal fade" id="Modal1" role="dialog">
+                <div class="modal-dialog modal-lg">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Testing & Results</h4>
+                        </div>
+                        <div class="modal-body">
+                            <button>Upload</button>
+                            <iframe src="http://127.0.0.1:5000/predict" style="border-radius: 5px !important; background-color: #333335 !important; border-color:beige; color:aliceblue !important;"></iframe>
+                            <p>ADD Your iframe or related code.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Modal about-->
+            <div class="modal fade" id="Modal2" role="dialog">
+                <div class="modal-dialog modal-lg">
+
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Modal with Dark Overlay</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>This modal has a dark 2.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

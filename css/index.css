@@ -1,0 +1,168 @@
+html {
+  word-wrap: break-word;
+}
+
+body {
+  background: url(/assets/mri_static_loop.gif) no-repeat center top fixed;
+  background-color: #333335 !important;
+  background-size: 100% 87%;
+  overflow: hidden;
+}
+
+.main {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: start;
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  -ms-flex-line-pack: end;
+  align-content: flex-end;
+  -ms-flex-align: end;
+  -webkit-box-align: end;
+  align-items: flex-end;
+  margin-bottom: -10px !important;
+  margin-left: 0px !important;
+  margin-top: 85vh !important;
+}
+
+h1 {
+  padding-left: 5px !important;
+  padding-right: 20px !important;
+  padding-top: 5px !important;
+  padding-bottom: 2px !important;
+  background-color: #333335 !important;
+  color: #eee !important;
+  font-size: 20px !important;
+  border-radius: 5px !important;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  -ms-flex-order: 0;
+  -webkit-box-ordinal-group: 1;
+  order: 0;
+  -ms-flex: 0.1 1 end;
+  -webkit-box-flex: 0.1;
+  flex: 0.1 1 end;
+  -webkit-align-self: end;
+  -ms-flex-item-align: end;
+  -ms-grid-row-align: end;
+  align-self: end;
+}
+
+ul {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #333335 !important;
+  padding-left: 20px !important;
+  padding-right: 200px !important;
+  padding-top: 5px !important;
+  padding-bottom: 14px !important;
+  border-radius: 5px !important;
+  -ms-flex-order: 0;
+  -webkit-box-ordinal-group: 1;
+  order: 0;
+  -ms-flex: 0.9 1 end;
+  -webkit-box-flex: 0.9;
+  flex: 0.9 1 end;
+  -webkit-align-self: end;
+  -ms-flex-item-align: end;
+  -ms-grid-row-align: end;
+  align-self: end;
+}
+
+a {
+  color: #000;
+  text-decoration: none !important;
+}
+
+a:visited,
+a:active,
+a:focus,
+a:link {
+  color: inherit;
+  text-decoration: none !important;
+}
+
+a:hover {
+  font-weight: 500;
+  color: #000 !important;
+  background-color: #eee !important;
+  text-decoration: none !important;
+}
+
+h1:hover {
+  background-color: #eee !important;
+  text-decoration: none !important;
+  color: #333335 !important;
+}
+
+ul > button {
+  font-size: 12px !important;
+  font-weight: 500 !important;
+  list-style: none !important;
+  background-color: #333335 !important;
+  color: #eee !important;
+}
+
+ul > button:hover {
+  font-weight: 700 !important;
+  background-color: #eee !important;
+  color: #000 !important;
+}
+
+.modal-body {
+  background-color: #333335;
+  color: #eee;
+  font-size: 14px;
+}
+
+.modal-header {
+  background-color: #333335;
+  color: #eee;
+}
+
+.modal-title {
+  font-size: 18px !important;
+}
+
+.modal-footer {
+  background-color: #333335;
+  color: #eee;
+}
+
+.modal-header > button {
+  color: #eee;
+  font-size: 30px;
+}
+
+.modal-header > button:hover {
+  color: brown;
+}
+
+.nav-tabs {
+  border-bottom: 1px solid #eee !important;
+  border-radius: 0 !important;
+}
+
+#tabContent > li > a {
+  font-size: 18px !important;
+  float: left !important;
+}
+/*# sourceMappingURL=index.css.map */
+pre {
+  color: #eee !important;
+}
